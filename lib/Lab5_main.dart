@@ -37,13 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(
-            widget.title,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.indigo.shade900,
-                fontFamily: 'Playwrite',
-            ),
+          widget.title,
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.indigo.shade900,
+            fontFamily: 'Playwrite',
+          ),
         ),
         centerTitle: true,
       ),
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(onPressed: () {
               print('Przycisk został kliknięty!');
             },
-                child: const Text('Kliknij mnie'),
+              child: const Text('Kliknij mnie'),
             ),
             Container(
               width: 200,
