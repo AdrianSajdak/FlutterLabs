@@ -43,3 +43,131 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ============================================
+# SECURITY: Firebase & Sensitive Data
+# ============================================
+
+# Firebase configuration files (contain API keys and secrets)
+lib/firebase_options.dart
+firebase.json
+firebase_options.dart
+google-services.json
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+lib/generated_plugin_registrant.dart
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# API Keys and secrets
+**/secrets.dart
+**/api_keys.dart
+**/config/secrets.json
+**/config/keys.json
+
+# ============================================
+# Additional Flutter Security
+# ============================================
+
+# Keystore files (NEVER commit these!)
+*.jks
+*.keystore
+*.p12
+*.key
+key.properties
+android/key.properties
+android/app/keystore.properties
+
+# iOS Certificates and Profiles
+*.mobileprovision
+*.cer
+*.p8
+*.certSigningRequest
+
+# ============================================
+# Database & Local Storage
+# ============================================
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+*.realm
+
+# ============================================
+# IDE & Editor Sensitive Files
+# ============================================
+
+# VS Code workspace settings (may contain sensitive paths)
+.vscode/settings.json
+.vscode/launch.json
+
+# IntelliJ/Android Studio sensitive settings
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+
+# ============================================
+# Build & Cache (may contain sensitive data)
+# ============================================
+
+# Flutter build outputs
+/build/
+**/build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Gradle
+.gradle/
+android/.gradle/
+**/gradle-wrapper.jar
+
+# iOS build
+**/ios/Pods/
+**/ios/build/
+**/ios/DerivedData/
+
+# ============================================
+# Testing & Development
+# ============================================
+
+# Test coverage
+coverage/
+*.lcov
+
+# Debug logs
+*.log
+logs/
+firebase-debug.log
+firestore-debug.log
+
+# ============================================
+# Backup & Temporary Files
+# ============================================
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
